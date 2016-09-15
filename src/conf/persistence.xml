@@ -3,6 +3,8 @@
   <persistence-unit name="SpringDemoPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>sample.student.Student</class>
+    <class>sample.teacher.Teacher</class>
+    <class>sample.course.Course</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://myserversecn9.database.windows.net:1433;databaseName=QUANGPX"/>
