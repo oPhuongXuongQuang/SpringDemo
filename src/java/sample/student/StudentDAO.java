@@ -6,11 +6,7 @@
 package sample.student;
 
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import org.springframework.stereotype.Component;

@@ -11,7 +11,9 @@
 
     <h1>Choose one stuff to manage!</h1>
     
-    <h3><a href="./student">Student</a></h3>
+<!--    <h3><a href="./student">Student</a></h3>
     <h3><a href="./teacher">Teacher</a></h3>
-    <h3><a href="./course">Course</a></h3>
+    <h3><a href="./course">Course</a></h3>-->
+    <h3><a href="./product">Product</a></h3>
+    <h3><a href="./category">Category</a></h3>
 </html>

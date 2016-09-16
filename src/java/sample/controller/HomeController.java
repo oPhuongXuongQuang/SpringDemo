@@ -10,7 +10,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import sample.category.CategoryDAO;
 import sample.course.CourseDAO;
+import sample.product.ProductDAO;
 import sample.student.StudentDAO;
 import sample.teacher.TeacherDAO;
 
@@ -27,6 +29,10 @@ public class HomeController {
     private TeacherDAO teacherDAO;
     @Autowired
     private CourseDAO courseDAO;
+    @Autowired
+    private CategoryDAO categoryDAO;
+    @Autowired
+    private ProductDAO productDAO;
     
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home() {
@@ -51,5 +57,16 @@ public class HomeController {
         return "course";
     }
     
+    @RequestMapping(value = "/product", method = RequestMethod.GET)
+    public String product(Model model) {
+        model.addAttribute("PRODUCTS", productDAO.getAllProduct());
+        model.addAttribute("CATEGORIES", categoryDAO.getAllCategory());
+        return "product";
+    }
     
+    @RequestMapping(value = "/category", method = RequestMethod.GET)
+    public String category(Model model) {
+        model.addAttribute("CATEGORIES", categoryDAO.getAllCategory());
+        return "category";
+    }
 }

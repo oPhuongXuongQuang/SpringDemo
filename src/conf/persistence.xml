@@ -5,6 +5,8 @@
     <class>sample.student.Student</class>
     <class>sample.teacher.Teacher</class>
     <class>sample.course.Course</class>
+    <class>sample.product.Product</class>
+    <class>sample.category.Category</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://myserversecn9.database.windows.net:1433;databaseName=QUANGPX"/>
